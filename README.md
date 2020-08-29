@@ -49,3 +49,7 @@ Or for production,
 ### Reset Password
 
 ![Reset Password](https://raw.github.com/InfyOmLabs/laravel-ui-coreui/master/screenshots/Reset-Password.png)
+
+### Admin Layout
+
+![Reset Password](https://raw.github.com/InfyOmLabs/laravel-ui-coreui/master/screenshots/Admin-Layout.png)
