@@ -10,7 +10,6 @@ class CoreUIPresetServiceProvider extends ServiceProvider
     public function boot()
     {
         UiCommand::macro('coreui', function (UiCommand $command) {
-
             $coreUIPreset = new CoreUIPreset($command);
             $coreUIPreset->install();
 
