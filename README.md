@@ -1,5 +1,11 @@
 # Laravel UI CoreUI
 
+[![Total Downloads](https://poser.pugx.org/infyomlabs/laravel-ui-coreui/downloads)](https://packagist.org/packages/infyomlabs/laravel-ui-coreui)
+[![Monthly Downloads](https://poser.pugx.org/infyomlabs/laravel-genui-coreuierator/d/monthly)](https://packagist.org/packages/infyomlabs/laravel-ui-coreui)
+[![Daily Downloads](https://poser.pugx.org/infyomlabs/laravel-ui-coreui/d/daily)](https://packagist.org/packages/infyomlabs/laravel-ui-coreui)
+[![License](https://poser.pugx.org/infyomlabs/laravel-ui-coreui/license)](https://packagist.org/packages/infyomlabs/laravel-ui-coreui)
+[![Build Status](https://travis-ci.org/InfyOmLabs/laravel-ui-coreui.svg?branch=test-cases)](https://travis-ci.org/InfyOmLabs/laravel-ui-coreui)
+
 [Laravel Frontend Scaffolding](https://laravel.com/docs/7.x/frontend) for [CoreUI](https://coreui.io/) Theme.
 
 ## Installation
