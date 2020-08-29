@@ -1,17 +1,19 @@
-<aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <a href="{{ route('home') }}" class="brand-link">
-        <img src="https://infyom.com/images/logo/blue_logo_150x150.jpg"
-             alt="AdminLTE Logo"
-             class="brand-image img-circle elevation-3">
-        <span class="brand-text font-weight-light">{{ config('app.name') }}</span>
-    </a>
-
-    <div class="sidebar">
-        <nav class="mt-2">
-            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                @include('layouts.menu')
-            </ul>
-        </nav>
+<div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
+    <div class="c-sidebar-brand d-md-down-none">
+        <img src="https://infyom.com/images/logo/logo_236w.png" width="46"
+             class="c-sidebar-brand-full" alt="Brand Logo">
+        <img src="https://infyom.com/images/logo/blue_logo_150x150.png" width="46" height="46"
+             class="c-sidebar-brand-minimized" alt="Brand Logo">
     </div>
-
-</aside>
+    <ul class="c-sidebar-nav">
+        @include('layouts.menu')
+        <div class="ps__rail-x" style="left: 0px; bottom: 0px;">
+            <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+        </div>
+        <div class="ps__rail-y" style="top: 0px; height: 692px; right: 0px;">
+            <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 369px;"></div>
+        </div>
+    </ul>
+    <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent"
+            data-class="c-sidebar-unfoldable"></button>
+</div>
