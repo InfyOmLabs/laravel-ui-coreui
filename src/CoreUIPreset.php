@@ -29,10 +29,11 @@ class CoreUIPreset extends Preset
     protected static function updatePackageArray(array $packages)
     {
         return [
-                'bootstrap' => '^4.0.0',
+                'bootstrap' => '^4.1.0',
                 'jquery' => '^3.2',
                 'popper.js' => '^1.12',
                 '@coreui/coreui' => '^3.2.2',
+                "@coreui/icons" => "^1.0.1",
             ] + $packages;
     }
 
@@ -51,7 +52,6 @@ class CoreUIPreset extends Preset
      */
     protected static function updateSass()
     {
-        copy(__DIR__.'/../coreui-stubs/bootstrap/_variables.scss', resource_path('sass/_variables.scss'));
         copy(__DIR__.'/../coreui-stubs/bootstrap/app.scss', resource_path('sass/app.scss'));
     }
 
