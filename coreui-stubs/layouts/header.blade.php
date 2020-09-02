@@ -1,6 +1,6 @@
 <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar"
         data-class="c-sidebar-show">
-    <i class="c-icon c-icon-lg cil-energy"></i>
+    <i class="c-icon c-icon-lg cil-menu"></i>
 </button>
 <a class="c-header-brand d-lg-none c-header-brand-sm-up-center" href="#">
     <img src="https://infyom.com/images/logo/logo_236w.png" width="118" alt="Brand Logo">
