@@ -38,6 +38,12 @@ Or for production,
 
 `npm install && npm run prod`
 
+## Tutorial
+Here you can find a video tutorial. (**Credits**: [shailesh-ladumor](https://github.com/shailesh-ladumor))
+
+[<img src="https://img.youtube.com/vi/AGkVhgvArd8/0.jpg" width="480">](https://youtu.be/AGkVhgvArd8)
+
+
 ## Screenshots
 
 ### Login
