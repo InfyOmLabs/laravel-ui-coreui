@@ -30,17 +30,20 @@ class CoreUIPreset extends Preset
     protected static function updatePackageArray(array $packages)
     {
         return [
-            'bootstrap'      => '^4.1.0',
-            'jquery'         => '^3.2',
-            'popper.js'      => '^1.12',
-            '@coreui/coreui' => '^3.2.2',
-            '@coreui/icons'  => '^1.0.1',
-        ] + $packages;
+                'bootstrap' => '^4.1.0',
+                'jquery' => '^3.2',
+                'popper.js' => '^1.12',
+                'sass' => '^1.15.2',
+                'sass-loader' => '^8.0.0',
+                '@coreui/coreui' => '^3.2.2',
+                '@coreui/icons' => '^1.0.1',
+            ] + $packages;
     }
 
     public function install()
     {
         static::updatePackages();
+        static::updateWebpackConfiguration();
         static::updateSass();
         static::updateBootstrapping();
         static::removeNodeModules();
@@ -53,7 +56,19 @@ class CoreUIPreset extends Preset
      */
     protected static function updateSass()
     {
-        copy(__DIR__.'/../coreui-stubs/bootstrap/app.scss', resource_path('sass/app.scss'));
+        (new Filesystem())->ensureDirectoryExists(resource_path('sass'));
+
+        copy(__DIR__ . '/../coreui-stubs/bootstrap/app.scss', resource_path('sass/app.scss'));
+    }
+
+    /**
+     * Update the Webpack configuration.
+     *
+     * @return void
+     */
+    protected static function updateWebpackConfiguration()
+    {
+        copy(__DIR__ . '/../adminlte-stubs/bootstrap/webpack.mix.js', base_path('webpack.mix.js'));
     }
 
     /**
@@ -63,8 +78,8 @@ class CoreUIPreset extends Preset
      */
     protected static function updateBootstrapping()
     {
-        copy(__DIR__.'/../coreui-stubs/bootstrap/bootstrap.js', resource_path('js/bootstrap.js'));
-        copy(__DIR__.'/../coreui-stubs/bootstrap/app.js', resource_path('js/app.js'));
+        copy(__DIR__ . '/../coreui-stubs/bootstrap/bootstrap.js', resource_path('js/bootstrap.js'));
+        copy(__DIR__ . '/../coreui-stubs/bootstrap/app.js', resource_path('js/app.js'));
     }
 
     public function installAuth()
@@ -115,7 +130,7 @@ class CoreUIPreset extends Preset
 
         file_put_contents(
             base_path('routes/web.php'),
-            "Auth::routes();\n\nRoute::get('/home', 'HomeController@index')->name('home');\n\n",
+            "Auth::routes();\n\nRoute::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');\n\n",
             FILE_APPEND
         );
 
