@@ -68,7 +68,7 @@ class CoreUIPreset extends Preset
      */
     protected static function updateWebpackConfiguration()
     {
-        copy(__DIR__ . '/../adminlte-stubs/bootstrap/webpack.mix.js', base_path('webpack.mix.js'));
+        copy(__DIR__ . '/../coreui-stubs/bootstrap/webpack.mix.js', base_path('webpack.mix.js'));
     }
 
     /**
