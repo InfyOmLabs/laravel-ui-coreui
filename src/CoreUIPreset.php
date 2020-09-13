@@ -30,14 +30,14 @@ class CoreUIPreset extends Preset
     protected static function updatePackageArray(array $packages)
     {
         return [
-                'bootstrap' => '^4.1.0',
-                'jquery' => '^3.2',
-                'popper.js' => '^1.12',
-                'sass' => '^1.15.2',
-                'sass-loader' => '^8.0.0',
-                '@coreui/coreui' => '^3.2.2',
-                '@coreui/icons' => '^1.0.1',
-            ] + $packages;
+            'bootstrap'      => '^4.1.0',
+            'jquery'         => '^3.2',
+            'popper.js'      => '^1.12',
+            'sass'           => '^1.15.2',
+            'sass-loader'    => '^8.0.0',
+            '@coreui/coreui' => '^3.2.2',
+            '@coreui/icons'  => '^1.0.1',
+        ] + $packages;
     }
 
     public function install()
@@ -58,7 +58,7 @@ class CoreUIPreset extends Preset
     {
         (new Filesystem())->ensureDirectoryExists(resource_path('sass'));
 
-        copy(__DIR__ . '/../coreui-stubs/bootstrap/app.scss', resource_path('sass/app.scss'));
+        copy(__DIR__.'/../coreui-stubs/bootstrap/app.scss', resource_path('sass/app.scss'));
     }
 
     /**
@@ -68,7 +68,7 @@ class CoreUIPreset extends Preset
      */
     protected static function updateWebpackConfiguration()
     {
-        copy(__DIR__ . '/../coreui-stubs/bootstrap/webpack.mix.js', base_path('webpack.mix.js'));
+        copy(__DIR__.'/../coreui-stubs/bootstrap/webpack.mix.js', base_path('webpack.mix.js'));
     }
 
     /**
@@ -78,8 +78,8 @@ class CoreUIPreset extends Preset
      */
     protected static function updateBootstrapping()
     {
-        copy(__DIR__ . '/../coreui-stubs/bootstrap/bootstrap.js', resource_path('js/bootstrap.js'));
-        copy(__DIR__ . '/../coreui-stubs/bootstrap/app.js', resource_path('js/app.js'));
+        copy(__DIR__.'/../coreui-stubs/bootstrap/bootstrap.js', resource_path('js/bootstrap.js'));
+        copy(__DIR__.'/../coreui-stubs/bootstrap/app.js', resource_path('js/app.js'));
     }
 
     public function installAuth()
