@@ -15,7 +15,7 @@ Run a command,
 
 For Laravel 7,
 
-`composer require infyomlabs/laravel-ui-adminlte:^2.0`
+`composer require infyomlabs/laravel-ui-coreui:^2.0`
 
 For Laravel 6,
 
