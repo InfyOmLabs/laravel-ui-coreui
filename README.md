@@ -63,9 +63,23 @@ You can support us by either sponsoring us or buying one of our paid products. O
 
 ### Buy our Paid Products
 
-[![InfyHMS](https://assets.infyom.com/open-source/infyhms-banner.png)](https://codecanyon.net/item/infyhms-smart-hospital-management-system/26344507)
+[![InfyHMS](https://assets.infyom.com/open-source/infyhms-banner.png)](https://bit.ly/3mtqXuk)
 
 You can also check out our other paid products on [CodeCanyon](https://codecanyon.net/user/infyomlabs/portfolio).
+
+
+### Follow Us
+
+- [Twitter](https://twitter.com/infyom)
+- [Facebook](https://www.facebook.com/infyom)
+- [LinkedIn](https://in.linkedin.com/company/infyom-technologies)
+- [Youtube](https://www.youtube.com/channel/UC8IvwfChD6i7Wp4yZp3tNsQ)
+- [Contact Us](https://infyom.com/contact-us)
+
+## Made with InfyOm Generator
+
+Also, Do not forget to add your website to [Made with InfyOm Generator List](https://github.com/InfyOmLabs/laravel-generator/blob/develop/made-with-generator.md) list.
+
 
 ## Video Tutorials
 
