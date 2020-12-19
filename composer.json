@@ -32,5 +32,11 @@
                 "InfyOm\\CoreUIPreset\\CoreUIPresetServiceProvider"
             ]
         }
-    }
+    },
+    "funding": [
+        {
+            "type": "opencollective",
+            "url": "https://opencollective.com/infyomlabs"
+        }
+    ]
 }
