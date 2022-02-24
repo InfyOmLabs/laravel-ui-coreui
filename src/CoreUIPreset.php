@@ -30,13 +30,8 @@ class CoreUIPreset extends Preset
     protected static function updatePackageArray(array $packages)
     {
         return [
-            'bootstrap'      => '^4.1.0',
-            'jquery'         => '^3.2',
-            'popper.js'      => '^1.12',
-            'sass'           => '^1.15.2',
-            'sass-loader'    => '^8.0.0',
-            '@coreui/coreui' => '^3.2.2',
-            '@coreui/icons'  => '^1.0.1',
+            '@coreui/coreui' => '^4.1',
+            '@coreui/icons'  => '^2.0',
         ] + $packages;
     }
 

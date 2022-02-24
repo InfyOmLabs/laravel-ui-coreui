@@ -3,7 +3,7 @@
     <i class="c-icon c-icon-lg cil-menu"></i>
 </button>
 <a class="c-header-brand d-lg-none c-header-brand-sm-up-center" href="#">
-    <img src="https://infyom.com/images/logo/logo_236w.png" width="118" alt="Brand Logo">
+    <img src="https://assets.infyom.com/logo/blue_logo_150x150.png" width="118" alt="Brand Logo">
 </a>
 <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar"
         data-class="c-sidebar-lg-show" responsive="true">
@@ -16,7 +16,7 @@
         <a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button"
            aria-haspopup="true" aria-expanded="false">
             <div class="c-avatar">
-                <img class="c-avatar-img" src="https://infyom.com/images/logo/blue_logo_150x150.png" alt="">
+                <img class="c-avatar-img" src="https://assets.infyom.com/logo/blue_logo_150x150.png" alt="">
             </div>
         </a>
         <div class="dropdown-menu dropdown-menu-right pt-0">
